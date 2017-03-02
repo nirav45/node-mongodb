@@ -4,8 +4,12 @@
   "description": "Node MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "mocha server/**/*.test.js",
+    "start": "node server/server.js",
+    "test": "SET NODE_ENV=test&& mocha server/**/*.test.js --timeout 15000",
     "test-watcher": "nodemon --exec \"npm test\""
+  },
+  "engines": {
+    "node": "7.5.0"
   },
   "author": "Nirav Patel",
   "license": "ISC",
