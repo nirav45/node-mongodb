@@ -1,3 +1,4 @@
 node_modules/
 .idea/
 server/config/config.json
+server/config/config-mlab.json
